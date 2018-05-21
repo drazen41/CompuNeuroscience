@@ -24,8 +24,16 @@ function [ sta ] = compute_sta( stim, rho, num_timesteps )
     % 
     % Your code goes here.
   
-  sta = arrayfun(@(x) sum(stim(spike_times+x)), [-num_timesteps+1:0])'
-  sta /= num_spikes
+  %sta = arrayfun(@(x) sum(stim(spike_times+x)), [-num_timesteps+1:0])'
+  %sta /= num_spikes
+  for i=1:num_timesteps
+   % sum(stim(spike_times(i:num_timesteps:end)))
+   
+   for j=i:length(stim)
+     
+   end
+   
+  end
   
   
   
